@@ -1,0 +1,10 @@
+name: MLflow_Project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      epochs: {type: int, default: 100}
+    command: "python Train_TensorFlow.py {convSize} {epochs}"
+
