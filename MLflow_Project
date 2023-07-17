@@ -6,5 +6,5 @@ entry_points:
   main:
     parameters:
       epochs: {type: int, default: 10}
-    command: "python mlflow_project.py  {epochs}"
+    command: "python mlflow_project.py {epochs}"
 
