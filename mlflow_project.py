@@ -206,7 +206,7 @@ if __name__ == '__main__':
    # suppress any deprecated warnings
    warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-   epochs = int(sys.argv[2]) if len(sys.argv) > 2 else 10
+   epochs = 5
    params = {'epochs': epochs}
    (exp_id, run_id) = mlflow_run(params)
 
