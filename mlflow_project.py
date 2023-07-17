@@ -185,9 +185,6 @@ def build_model():
 
 model = build_model()
 
-model.summary()
-tf.keras.utils.plot_model(model,show_shapes=True)
-
 def mlflow_run(params,run_name="Tracking Experiment: Transformer Wav2Vec Model "):
     # Remove targets from training dictionaries
     train_x = {x: y for x, y in train.items() if x != "label"}
